@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Jquery exercício 01</title>
+</head>
+	<script src="jquery-2.1.4.min.js"></script>
+<script>
+			$(document).ready(function(){
+			$("#botao").click(function(){
+				var texto = $("#txtTexto").val();
+							$("#textoInicial").html(texto);
+			$("#botao").click(function(){
+				alert('Escreva o texto');
+			});
+			});
+	});
+
+</script>
+<body>
+	<input type="texto" id="txtTexto"/>
+	<input type="button" id="botao" value="Clique para trocar"/>
+	<p id="textoInicial"> Texto que será mudado </p>
+	
+</body>
+</html>
